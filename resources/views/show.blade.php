@@ -1,7 +1,7 @@
 @extends('app')
- 
+
 @section('content')
-  
+
 
 
 <div class="container-fluid">
@@ -21,7 +21,7 @@
                             <td>{{$photo->id}}</td>
                             <td><img id="thumbnail-image" src="{{ Voyager::image($photo->image) }}" alt="description of myimage"></td>
                             <td>{{$photo->description}}</td>
-                            <td><a target=”_blank” href="photo-{{$photo->id}}" class="btn btn-info">View</a></td>
+                            <td><a target=”_blank” href="gallery-{{$photo->id}}" class="btn btn-info">View</a></td>
                         </tr>
                     @empty
                         <tr>

@@ -36,6 +36,6 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-Route::get('photo-{id}', 'App\Http\Controllers\PhotoController@indexGallery');
+Route::get('gallery-{id}', 'App\Http\Controllers\PhotoController@indexGallery');
 
-Route::get('photo-{id}', 'App\Http\Controllers\PhotoController@getGallery');
+Route::get('gallery-{id}', 'App\Http\Controllers\PhotoController@getGallery');

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 03, 2022 at 01:21 PM
+-- Generation Time: May 10, 2022 at 09:51 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -375,7 +375,8 @@ CREATE TABLE `photos` (
 --
 
 INSERT INTO `photos` (`id`, `image`, `images`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'photos/May2022/5OGuVCe6KSVIH3xMiOSO.png', '[\"photos\\/May2022\\/66cZG9hxXXWGAU3zZX1Z.jpg\",\"photos\\/May2022\\/D0ccLy3ESUGzDrRKXMPC.jpg\",\"photos\\/May2022\\/dHd9zxWsEmolgpom3k7N.jpg\",\"photos\\/May2022\\/UN8GGVtrzMDxZLBZQmRs.jpg\",\"photos\\/May2022\\/ypZKPvDzt1cs0tkwNftj.jpg\"]', 'Shop Photos!', '2022-05-02 07:40:37', '2022-05-02 07:40:37');
+(1, 'photos/May2022/5OGuVCe6KSVIH3xMiOSO.png', '[\"photos\\/May2022\\/66cZG9hxXXWGAU3zZX1Z.jpg\",\"photos\\/May2022\\/D0ccLy3ESUGzDrRKXMPC.jpg\",\"photos\\/May2022\\/dHd9zxWsEmolgpom3k7N.jpg\",\"photos\\/May2022\\/UN8GGVtrzMDxZLBZQmRs.jpg\",\"photos\\/May2022\\/ypZKPvDzt1cs0tkwNftj.jpg\"]', 'Shop Photos!', '2022-05-02 07:40:37', '2022-05-02 07:40:37'),
+(2, 'photos/May2022/apim5IuyI942G7zCWgZG.jpg', '[\"photos\\/May2022\\/X2U0vnhhRZDDtXiULmEJ.jpg\",\"photos\\/May2022\\/CZhcSvra9EmbjqCUvz9W.jpg\"]', 'w', '2022-05-10 18:48:31', '2022-05-10 18:48:31');
 
 -- --------------------------------------------------------
 
@@ -661,7 +662,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `roles`
