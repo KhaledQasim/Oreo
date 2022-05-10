@@ -9,12 +9,12 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('app.css') }}" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- CSRF Token -->
-  
+
   <title>الزهور لشرقية</title>
  </head>
  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-7 mb-4">
           <div class="container-fluid">
             <a class="navbar-brand">
               <img class="img-thumbnail d-inline-block align-top" src="storage/photos/shopLogo/flower.jpg" alt="Brand-image" width="35" height="35">
@@ -32,7 +32,7 @@
                   <a class="nav-link" aria-current="page" href="{{ url('/store') }}"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Store</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="{{ url('/contact') }}"><i class="fa fa-info-circle" aria-hidden="true"></i> Contact Us / Info</a>
+                  <a class="nav-link" aria-current="page"  href="{{ url('/contact') }}"><i class="fa fa-info-circle" aria-hidden="true"></i> Contact Us / Info</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" target=”_blank” href="https://www.instagram.com/alzohoor_alsharkia/"><i class="fa fa-instagram"></i>&nbsp;Instagram</a>
@@ -47,7 +47,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <img class="img-fluid" style="margin-top:5px" src="storage/photos/shopLogo/shopLong.jpg" alt="Brand-image">
-                
+
               </div>
               <hr style="padding-top:5px; margin-top:10px; margin-bottom:35px" >
             </div>
