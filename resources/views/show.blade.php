@@ -19,7 +19,7 @@
                     @forelse($photos as $photo)
                         <tr>
                             <td>{{$photo->id}}</td>
-                            <td><img id="thumbnail-image" src="{{ Voyager::image($photo->image) }}" alt="description of myimage"></td>
+                            <td><img id="thumbnail-image" src="{{ Voyager::image($photo->image) }}" alt="No Gallery Thumbnail Image Selected!"></td>
                             <td>{{$photo->description}}</td>
                             <td><a target=”_blank” href="gallery-{{$photo->id}}" class="btn btn-info">View</a></td>
                         </tr>
