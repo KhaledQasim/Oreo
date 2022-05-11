@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('app.css') }}" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- CSRF Token -->
-  
+
   <title>الزهور لشرقية</title>
  </head>
  <body>
@@ -20,7 +20,7 @@
 
   <div>
     @forelse(json_decode($photo->images , true) as $image)
-      <img src="{{ Voyager::image($image) }}" alt="Missing Gallery Photo" class="img-fluid img-thumbnail" style="padding:5px; margin:5px 0px 5px 0px">
+      <img src="{{ Voyager::image($image) }}" alt="Missing Gallery Photo" class="img-fluid img-thumbnail" style="padding:3px;margin:3px">
     @empty
       <tr>
         <td colspan="5"> No images selected in gallery! (go to admin webpage and add photos to the images column)</td>
