@@ -17,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/gallery', 'App\Http\Controllers\PhotoController@index');
 
 Route::get('/gallery', 'App\Http\Controllers\PhotoController@getPhotos');
-
+Route::get('/photo', function () {
+    return view('photo');
+});
 
 Route::get('/', function () {
     return view('index');
