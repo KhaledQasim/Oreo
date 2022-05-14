@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 use App\Models\Photo;
 class PhotoController extends Controller
 {
+    public function getPhotossindex()
+    {
+        return view('photo');
+    }
+
     public function index()
     {
         return view('show');
@@ -16,6 +21,12 @@ class PhotoController extends Controller
     {
         $photos = Photo::all();
         return view('show')->with('photos', $photos);
+    }
+
+    public function getPhotoss()
+    {
+        $photos = Photo::all();
+        return view('photo')->with('photos', $photos);
     }
 
     public function indexGallery()
