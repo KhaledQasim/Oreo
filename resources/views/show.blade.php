@@ -40,7 +40,7 @@
 @section('content')
 
 <head>
-    <link rel="stylesheet" type="text/css" href="{{ asset('../resources/css/gallery.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ asset('gallery.css') }}" >
 
 </head>
 
