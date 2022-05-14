@@ -18,7 +18,7 @@
 @section('content')
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="{{ asset('gallery-fluid.css') }}">
+    <link rel="stylesheet" href="{{ asset('gallery-clean.css') }}">
 </head>
 <body>
 <div class="container gallery-container">
