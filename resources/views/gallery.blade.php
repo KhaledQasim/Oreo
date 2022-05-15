@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{ asset('gallery-clean.css') }}">
 </head>
 <body>
-    <h1 style="text-align: center;">{{$photo->description}}</h1>
+    <h1 style="text-align: center; text-transform: uppercase;">{{$photo->description}}</h1>
 <div class="container gallery-container">
     <div class="tz-gallery">
       @forelse(json_decode($photo->images , true) as $image)
