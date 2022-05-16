@@ -1,5 +1,5 @@
 @extends('app')
- 
+
 @section('content')
 
 <div class="container">
@@ -32,7 +32,7 @@
         <img class="img-fluid" style="margin-top:5px" src="storage/photos/store/store14.jpg" alt="Store-image">
 
       </div>
-      
+
     </div>
 </div>
 

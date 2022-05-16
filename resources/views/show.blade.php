@@ -35,23 +35,19 @@
     </div>
 </div>
 @endsection --}}
-@extends('app')
+{{-- @extends('app')
 
-@section('content')
-
-<head>
-    <link rel="stylesheet" type="text/css" href="{{ asset('gallery.css') }}" >
-
-</head>
+@section('content') --}}
 
 
-    <div class="wrapper">
+
+    {{-- <div class="wrapper">
 
         <div class="gallery">
             @forelse($photos as $photo)
                 <div class="gallery__item">
                     <a href="gallery-{{$photo->id}}" class="gallery__link">
-                        <img src="{{ Voyager::image($photo->image) }}" class="gallery__image" alt="No Gallery Thumbnail Image Selected!">
+                        <img src="{{ Voyager::image($photo->image) }}" class="gallery__image" alt="Gallery Thumbnail">
                         <div class="gallery__overlay">
                             <span>{{$photo->description}}</span>
                         </div>
@@ -63,9 +59,42 @@
 
         </div>
 
+    </div> --}}
+
+@extends('app')
+
+@section('content')
+
+
+
+
+    <div class="album py-5">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            @forelse ($photos as $photo)
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="gallery-{{$photo->id}}">
+                            <img class="card-img-top" src="{{ Voyager::image($photo->image) }}"  alt="Image Thumbnail">
+                            </a>
+                        <div class="card-body">
+                            <p class="card-text" style="text-align: center; color:black; text-decoration: underline white">{{$photo->description}}</p>
+                        </div>
+                        </div>
+                    </div>
+
+            @empty
+                <h3>No Galleries Found</h3>
+            @endforelse
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
 @endsection
+
+{{-- @endsection --}}
 

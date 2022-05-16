@@ -51,11 +51,14 @@
               <div class="col-lg-8">
                 <img class="img-fluid" style="margin-top:5px" src="storage/photos/shopLogo/shopLong.jpg" alt="Brand-image">
 
-              </div>
+            </div>
               <hr style="padding-top:5px; margin-top:10px; margin-bottom:35px" >
             </div>
           </div>
-            @yield('content')
+
+         @yield('content')
+
+
         </main>
  </body>
 </html>
