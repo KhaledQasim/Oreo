@@ -78,7 +78,7 @@
                     <div class="col">
                         <div class="card shadow-sm">
                             <a href="gallery-{{$photo->id}}">
-                            <img class="card-img-top" src="{{ Voyager::image($photo->image) }}"  alt="Image Thumbnail">
+                            <img class="card-img-top" src="{{ Voyager::image($photo->image) }}"  alt="Loading...">
                             </a>
                         <div class="card-body">
                             <p class="card-text" style="text-align: center; color:black; text-decoration: underline white">{{$photo->description}}</p>

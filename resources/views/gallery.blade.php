@@ -26,7 +26,7 @@
     <div class="tz-gallery">
       @forelse(json_decode($photo->images , true) as $image)
           <a class="lightbox " href="{{ Voyager::image($image) }}">
-              <img class="img-fluid img-thumbnail" src="{{ Voyager::image($image) }}" alt="Missing Gallery Photo" width="125px" height="175px" style="padding:3px;margin:3px">
+              <img class="img-fluid img-thumbnail" src="{{ Voyager::image($image) }}" alt="Loading..." width="125px" height="175px" style="padding:3px;margin:3px">
           </a>
       @empty
           <h4>No images selected in gallery! (go to admin webpage and add photos to the images column)</h4>
