@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
     <link rel="stylesheet" href="{{ asset('gallery-clean.css') }}">
 </head>
-<body>
+
     <h1 style="text-align: center; text-transform: uppercase;">{{$photo->description}}</h1>
 <div class="container gallery-container">
     <div class="tz-gallery">
@@ -38,6 +38,6 @@
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
-</body>
+
 
 @endsection

@@ -19,6 +19,25 @@ Route::get('/gallery', 'App\Http\Controllers\PhotoController@index');
 Route::get('/gallery', 'App\Http\Controllers\PhotoController@getPhotos');
 
 
+Route::get('gallery-{id}', 'App\Http\Controllers\PhotoController@indexGallery');
+
+Route::get('gallery-{id}', 'App\Http\Controllers\PhotoController@getGallery');
+
+
+Route::get('/acrylic', 'App\Http\Controllers\PhotoController@indexAcrylic');
+
+Route::get('/acrylic', 'App\Http\Controllers\PhotoController@getPhotosAcrylic');
+
+
+Route::get('acrylic-{id}', 'App\Http\Controllers\PhotoController@indexGalleryAcrylic');
+
+Route::get('acrylic-{id}', 'App\Http\Controllers\PhotoController@getGalleryAcrylic');
+
+
+
+
+
+
 
 
 Route::get('/', function () {
@@ -37,7 +56,3 @@ Route::get('/contact', function () {
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-
-Route::get('gallery-{id}', 'App\Http\Controllers\PhotoController@indexGallery');
-
-Route::get('gallery-{id}', 'App\Http\Controllers\PhotoController@getGallery');

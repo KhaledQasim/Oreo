@@ -1,4 +1,3 @@
-
 @extends('app')
 
 @section('content')
@@ -12,7 +11,7 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
             @forelse ($photos as $photo)
-                @if ($photo->type == "Foam")
+                @if ($photo->type == "Acrylic")
                     <div class="col">
                         <div class="card shadow-sm">
                             <a href="gallery-{{$photo->id}}">
@@ -36,5 +35,3 @@
     </div>
 
 @endsection
-
-
