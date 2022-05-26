@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('type');
             $table->text('image');
             $table->timestamps();
+            $table->text('display_name');
         });
     }
 

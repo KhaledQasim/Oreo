@@ -19,7 +19,7 @@
                             <img class="card-img-top" src="{{ Voyager::image($product->image) }}"  alt="Loading...">
                             </a>
                         <div class="card-body">
-                            <p class="card-text" style="text-transform: capitalize;text-align: center; color:black;">{{$product->type}}</p>
+                            <p class="card-text" style="text-transform: capitalize;text-align: center; color:black;">{{$product->display_name}}</p>
                         </div>
                         </div>
                     </div>
