@@ -10,63 +10,45 @@ class PhotoController extends Controller
 
     public function index()
     {
-        return view('show');
+        $url = request()->segment(count(request()->segments()));
+        return view($url);
     }
 
 
-    public function getPhotos()
+    public function get()
     {
         $photos = Photo::all();
-
-        return view('show')->with('photos', $photos);
+        $url = request()->segment(count(request()->segments()));
+        return view($url)->with('photos', $photos);
     }
 
 
 
-    public function indexGallery()
+    public function indexPhotos()
     {
-        return view('gallery');
+        return view('photos');
     }
 
-    public function getGallery($id)
-    {
-        $photo = Photo::find($id);
-        return view('gallery', array('photo' => $photo));
-
-    }
-
-
-
-
-
-
-
-
-    public function indexAcrylic()
-    {
-        return view('acrylic');
-    }
-
-
-    public function getPhotosAcrylic()
-    {
-        $photos = Photo::all();
-
-        return view('acrylic')->with('photos', $photos);
-    }
-
-
-
-    public function indexGalleryAcrylic()
-    {
-        return view('acrylic');
-    }
-
-    public function getGalleryAcrylic($id)
+    public function getPhotos($id)
     {
         $photo = Photo::find($id);
-        return view('acrylic', array('photo' => $photo));
+        return view('photos', array('photo' => $photo));
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -11,10 +11,10 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
             @forelse ($photos as $photo)
-                @if ($photo->type == "Acrylic")
+                @if ($photo->type == "acrylic")
                     <div class="col">
                         <div class="card shadow-sm">
-                            <a href="gallery-{{$photo->id}}">
+                            <a href="photos-{{$photo->id}}">
                             <img class="card-img-top" src="{{ Voyager::image($photo->image) }}"  alt="Loading...">
                             </a>
                         <div class="card-body">

@@ -34,22 +34,17 @@
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page"  href="{{ url('/contact') }}"><i class="fa fa-info-circle" aria-hidden="true"></i> Contact Us / Info</a>
                 </li>
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" aria-current="page"  href="{{ url('/gallery') }}"><i class="fa fa-photo" aria-hidden="true"></i> Gallery</a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" aria-current="page"  href="{{ url('/acrylic') }}"><i class="fa fa-photo" aria-hidden="true"></i> Acrylic</a>
-                </li> --}}
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                        <i class="fa fa-photo" aria-hidden="true"></i> Products
-                    </a>
-                    <ul class="dropdown-menu navbar-dark bg-dark shadow p-7 mb-4" aria-labelledby="navbarDropdown">
-                      <li><a class="nav-link" aria-current="page"  href="{{ url('/gallery') }}"><i  aria-hidden="true"></i> Foam</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="nav-link" aria-current="page"  href="{{ url('/acrylic') }}"><i  aria-hidden="true"></i> Acrylic</a></li>
-                    </ul>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page"  href="{{ url('/foam') }}"><i class="fa fa-photo" aria-hidden="true"></i> Foam</a>
+                </li> --}}
+
+
                 <li class="nav-item">
                   <a class="nav-link" target=”_blank” href="https://www.instagram.com/alzohoor_alsharkia/"><i class="fa fa-instagram"></i>&nbsp;Instagram</a>
                 </li>

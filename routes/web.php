@@ -14,25 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/gallery', 'App\Http\Controllers\PhotoController@index');
+Route::get('/gallery', 'App\Http\Controllers\ProductController@index');
 
-Route::get('/gallery', 'App\Http\Controllers\PhotoController@getPhotos');
-
-
-Route::get('gallery-{id}', 'App\Http\Controllers\PhotoController@indexGallery');
-
-Route::get('gallery-{id}', 'App\Http\Controllers\PhotoController@getGallery');
+Route::get('/gallery', 'App\Http\Controllers\ProductController@get');
 
 
-Route::get('/acrylic', 'App\Http\Controllers\PhotoController@indexAcrylic');
+Route::get('photos-{id}', 'App\Http\Controllers\PhotoController@indexPhotos');
 
-Route::get('/acrylic', 'App\Http\Controllers\PhotoController@getPhotosAcrylic');
+Route::get('photos-{id}', 'App\Http\Controllers\PhotoController@getPhotos');
 
 
-Route::get('acrylic-{id}', 'App\Http\Controllers\PhotoController@indexGalleryAcrylic');
+Route::get('/acrylic', 'App\Http\Controllers\PhotoController@index');
 
-Route::get('acrylic-{id}', 'App\Http\Controllers\PhotoController@getGalleryAcrylic');
+Route::get('/acrylic', 'App\Http\Controllers\PhotoController@get');
 
+
+
+Route::get('/foam', 'App\Http\Controllers\PhotoController@index');
+
+Route::get('/foam', 'App\Http\Controllers\PhotoController@get');
 
 
 
