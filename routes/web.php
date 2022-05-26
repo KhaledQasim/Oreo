@@ -37,6 +37,13 @@ Route::get('/foam', 'App\Http\Controllers\PhotoController@get');
 
 
 
+Route::get('/tree', 'App\Http\Controllers\PhotoController@index');
+
+Route::get('/tree', 'App\Http\Controllers\PhotoController@get');
+
+
+
+
 
 
 
