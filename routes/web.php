@@ -43,6 +43,9 @@ Route::get('/tree', 'App\Http\Controllers\PhotoController@get');
 
 
 
+Route::get('/baskets', 'App\Http\Controllers\PhotoController@index');
+
+Route::get('/baskets', 'App\Http\Controllers\PhotoController@get');
 
 
 
