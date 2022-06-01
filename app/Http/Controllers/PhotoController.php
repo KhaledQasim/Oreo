@@ -8,19 +8,7 @@ class PhotoController extends Controller
 {
 
 
-    public function index()
-    {
-        $url = request()->segment(count(request()->segments()));
-        return view($url);
-    }
 
-
-    public function get()
-    {
-        $photos = Photo::all();
-        $url = request()->segment(count(request()->segments()));
-        return view($url)->with('photos', $photos);
-    }
 
 
 
@@ -34,6 +22,19 @@ class PhotoController extends Controller
         $photo = Photo::find($id);
         return view('photos', array('photo' => $photo));
 
+    }
+
+
+    public function indexType()
+    {
+        return view('type');
+    }
+
+    public function getType($type)
+    {
+        $photo = Photo::all();
+
+        return view('type')->with('photo', $photo);
     }
 
 

@@ -14,40 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/gallery', 'App\Http\Controllers\ProductController@index');
 
-Route::get('/gallery', 'App\Http\Controllers\ProductController@get');
-
-
-Route::get('photos-{id}', 'App\Http\Controllers\PhotoController@indexPhotos');
-
-Route::get('photos-{id}', 'App\Http\Controllers\PhotoController@getPhotos');
-
-
-Route::get('/acrylic', 'App\Http\Controllers\PhotoController@index');
-
-Route::get('/acrylic', 'App\Http\Controllers\PhotoController@get');
-
-
-
-Route::get('/foam', 'App\Http\Controllers\PhotoController@index');
-
-Route::get('/foam', 'App\Http\Controllers\PhotoController@get');
-
-
-
-
-Route::get('/tree', 'App\Http\Controllers\PhotoController@index');
-
-Route::get('/tree', 'App\Http\Controllers\PhotoController@get');
-
-
-
-Route::get('/baskets', 'App\Http\Controllers\PhotoController@index');
-
-Route::get('/baskets', 'App\Http\Controllers\PhotoController@get');
-
-
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
 
 
 Route::get('/', function () {
@@ -62,7 +32,23 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/gallery', 'App\Http\Controllers\ProductController@index');
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+Route::get('/gallery', 'App\Http\Controllers\ProductController@get');
+
+
+Route::get('/photos-{id}', 'App\Http\Controllers\PhotoController@indexPhotos');
+
+Route::get('/photos-{id}', 'App\Http\Controllers\PhotoController@getPhotos');
+
+Route::get('/{type}', 'App\Http\Controllers\PhotoController@indexType');
+
+Route::get('/{type}', 'App\Http\Controllers\PhotoController@getType');
+
+
+
+
+
+
+
+
