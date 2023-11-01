@@ -22,7 +22,7 @@ Built With Laravel, uses MySQL for DB, The pages use Laravel Blade for simplicit
 
 ## The Extras
 
-The app also has an easy-to-use admin panel powered by Laravel Voyager, It allows the easy addtion and modification of the website's galleries.
+The app also has an easy-to-use admin panel powered by Laravel Voyager, It allows the easy addition and modification of the website's galleries.
 
 ![](images/admin1.png)
 ![](images/admin2.png)
